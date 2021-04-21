@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {Navbar} from './components/navbar/navbar'
+import {ItemListContainer} from './components/itemlistcontainer/itemlistcontainer'
 
 function App() {
+
+const saludo = 
+[
+  {
+    greeting: 'Disculpe las molestias, tienda en construccion.'
+  } 
+]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <ItemListContainer greeting={saludo[0].greeting}/>
     </div>
   );
 }
