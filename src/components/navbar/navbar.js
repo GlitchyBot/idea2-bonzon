@@ -1,4 +1,5 @@
 import './navbar.css'
+import cart from '../../cart.png' 
 import {Cartwidget} from '../cartwidget/cartwidget'
 
 
@@ -19,9 +20,10 @@ export const Navbar = () => {
               Promociones</a></li>
             <li className="menuItem">
               <a href=''>
-              Sucursales</a></li>                        
+              Sucursales</a></li>                     
           </ul>
-          <Cartwidget />
+          <Cartwidget/>
+          
           </nav>
       </header>
   )

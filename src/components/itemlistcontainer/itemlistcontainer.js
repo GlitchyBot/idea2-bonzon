@@ -1,7 +1,9 @@
 import './itemlistcontainer.css'
+import './itemList'
+import { ItemList } from './itemList'
 
-export const ItemListContainer = (props) => (
+export const ItemListContainer = () => (
     <div>
-        <h2 className="mensaje">{props.greeting}</h2>
+        <ItemList/>
     </div>
 )
